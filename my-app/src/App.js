@@ -5,10 +5,11 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-  
-      
-      </div>
+      <div class="ui three buttons">
+          <button class="ui active button">One</button>
+          <button class="ui button">Two</button>
+          <button class="ui button">Three</button>
+    </div>
     );
   }
 }
