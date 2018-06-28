@@ -18,25 +18,28 @@ body {
 }
 
 .boxclient {
-    width: 220px;
-    height: 100px;
+    width: 245px;
+    height: 137px;
     border-bottom: 2px solid;
     padding-top:  20px;
 }
 
 .simg {
     padding-right: 10px;
-    width: 79px;
+    width: 86px;
+    padding-bottom: 10px;
     height: auto;
     float: left;
 }
 
 .clientname {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 18px;
 }
 
 .clienttitle {
-    font-size: 12px;
+    width: 220px;
+    height: 52px;
+    font-size: 14px;
     font-weight: 800;
 }
