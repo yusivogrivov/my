@@ -8,7 +8,7 @@ function Clients(props) {
             
             
             <div class = "boxclient">
-                <img class="simg" src='https://s3.amazonaws.com/uifaces/faces/twitter/kevinoh/128.jpg' />
+                <img class="simg" src={myclient.general.avatar} />
                 <p class = "clientname">{myclient.general.firstName}  {myclient.general.lastName}</p>
                 <p class = "clienttitle">{myclient.job.title}</p>  
             </div>

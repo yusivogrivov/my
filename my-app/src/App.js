@@ -1,5 +1,5 @@
 import React from 'react';
-import Article from './Article';
+import ListC from './ListC';
 import client from './client';
 import './App.css';
 
@@ -20,12 +20,13 @@ function Search () {
 function App() {
     return (
         <div> <Search /> 
-           <Article myclient={client[0]} /> 
-           <Article myclient={client[1]} /> 
-           <Article myclient={client[2]} /> 
-           <Article myclient={client[3]} /> 
-           <Article myclient={client[4]} /> 
-           <Article myclient={client[5]} /> 
+            
+        
+           <ListC client = {client} /> 
+            
+        
+           
+          
         </div>
       
      
