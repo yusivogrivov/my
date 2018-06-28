@@ -3,3 +3,35 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+#root {
+    width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #aaa
+}
+
+.boxclient {
+    width: 220px;
+    height: 100px;
+    border-bottom: 2px solid;
+    padding-top:  20px;
+}
+
+.simg {
+    padding-right: 10px;
+    width: 79px;
+    height: auto;
+    float: left;
+}
+
+.clientname {
+    font-size: 20px;
+    line-height: 18px;
+}
+
+.clienttitle {
+    font-size: 12px;
+    font-weight: 800;
+}
