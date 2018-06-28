@@ -11,10 +11,18 @@ body {
 
 #root {
     width: 800px;
+    height: 2970px;
     margin: auto;
     margin-top: 20px;
     padding: 20px;
     border: 2px solid #aaa
+}
+
+#leftcol {
+    width: 245px;
+    height: 100%;
+    float: left;
+    margin-right: 10px;
 }
 
 .boxclient {
@@ -24,11 +32,20 @@ body {
     padding-top:  20px;
 }
 
+
+
 .simg {
     padding-right: 10px;
     width: 86px;
     padding-bottom: 10px;
     height: auto;
+    float: left;
+}
+
+
+.simg2 {
+    width: 116px;
+    padding-right: 10px;
     float: left;
 }
 
@@ -42,4 +59,13 @@ body {
     height: 52px;
     font-size: 14px;
     font-weight: 800;
+}
+
+
+#rightcol{
+    width: 500px;
+    height: 320px;
+    background-color:antiquewhite;
+    float: left;
+    padding-left: 20px;
 }

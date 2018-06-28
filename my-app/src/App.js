@@ -21,19 +21,14 @@ function App() {
     return (
         <div> <Search /> 
             
-        
            <ListC client = {client} /> 
-        
            
-        
-           
-          
         </div>
       
      
             )}
   
-    
+  
 
 
 

@@ -1,8 +1,31 @@
-
 import './index.css';
-import React from 'react'
+import React, {Component} from 'react'
 
+class Article extends Component {
+    
+    
+    state = {
+        isOpen: true  
+    }
 
+    render() {
+        const {myclient} = this.props
+        console.log ("___", this.props)
+        return (
+            
+            
+            <div class = "boxclient">
+                <img class="simg" src={myclient.general.avatar} />
+                <p class = "clientname">{myclient.general.firstName}  {myclient.general.lastName}</p>
+              <div class= "clienttitle">  <p>{myclient.job.title}</p>  </div>
+             <Butt /> 
+            </div>
+            
+            
+        )
+        
+    }
+}
 
 function Butt () {
     return( 
@@ -12,25 +35,8 @@ function Butt () {
     )}
 
 
-function Clients(props) {
-    const {myclient} = props
-        return (
-            
-            
-            <div class = "boxclient">
-                <img class="simg" src={myclient.general.avatar} />
-                <p class = "clientname">{myclient.general.firstName}  {myclient.general.lastName}</p>
-              <div class= "clienttitle">  <p>{myclient.job.title}</p>  </div>
-             <Butt /> 
-            
-        
-    
-            </div>
-        )
-}
-
 function mosClick() {
-    console.log ("ffff")
+    console.log ("clic")
 }
 
-export default Clients
+export default Article
