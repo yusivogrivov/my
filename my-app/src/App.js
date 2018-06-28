@@ -1,7 +1,6 @@
 import React from 'react';
 import ListC from './ListC';
 import client from './client';
-import Article2 from './Article2';
 import './App.css';
 
 
@@ -27,8 +26,8 @@ function App() {
            
         </div>
         
-        <div id = "righttcol">
-            <Article2 myclient={client[0]}/>
+        <div id = "rightcol">
+            <Search />
         </div>
       
       </div>
