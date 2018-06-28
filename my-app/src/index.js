@@ -11,6 +11,5 @@ import registerServiceWorker from './registerServiceWorker';
 
 
 
-ReactDOM.render(<App />, document.getElementById('leftcol'));
-ReactDOM.render(<App2 />, document.getElementById('rightcol'));
+ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
