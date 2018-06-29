@@ -12,9 +12,7 @@ class Article extends Component {
                     <img class="simg" src={myclient.general.avatar} />
                       <p class = "clientname">{myclient.general.firstName}  {myclient.general.lastName}</p>
                     <div class= "clienttitle">  <p>{myclient.job.title}</p>  </div>
-                   <button onClick={this.mosClick} className="ui button"> 
-                        {this.state.isOpen ? 'close' : 'open'}
-            </button>
+                  
             </div>
         </div>
         ) }
