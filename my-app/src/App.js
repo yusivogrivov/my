@@ -1,37 +1,52 @@
-import React from 'react';
-import ListC from './ListC';
-import client from './client';
-import './App.css';
+import React, {Component} from 'react'
+import ListC from './ListC'
+import Searc from './searc'
+import Artc from './Artc'
+import Article from './Article'
+import client from './client'
+import './App.css'
+
+import './semantic.css'
 
 
-function Search () {
+
+
+
+class App extends Component {
+    
+        state = {
+           isOpen: true
+       }
+ 
+
+  render() {
     return (
-           <div class="ui search">
-          <div class="ui icon input">
-            <input class="prompt" type="text" placeholder="Search countries..."></input>
-            <i class="search icon"></i>
-          </div>
-          <div class="results"></div>
+        
+      <div className="App">
+        <div className="lcol">
+            <Searc />
+            <ListC client = {client} />
+        
         </div>
         
-    )}
-
-
-function App() {
-    return (
-     <div id = "root">
-        <div id = "leftcol"> <Search /> 
-            
-           <ListC client = {client} /> 
-           
-        </div>
         
-        <div id = "rightcol">
-            <Search />
-        </div>
-      
+<div className="rcol">
+          <Artc myclient = {client[0]} />
+                    </div> 
+        
       </div>
-            )}
+        
+    );
+  }
+
+
+    mosClick = () => {
+            console.log ("__", "cli")
+            this.setState({
+                isOpen: !this.state.isOpen
+            } )
+        }
+}
   
 
-  export default App;
+  export default App

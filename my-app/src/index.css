@@ -6,32 +6,41 @@ ol, ul {
 body {
   margin: 0;
   padding: 0;
+    width: 100%;
+    height: 100%;
   font-family: sans-serif;
 }
 
 #root {
-    width: 800px;
-    height: 2970px;
+    width: 900px;
+    height: 3500px;
     margin: auto;
     margin-top: 20px;
     padding: 20px;
     border: 2px solid #aaa
 }
 
-#leftcol {
+.lcol {
     width: 245px;
     height: 100%;
-    float: left;
     margin-right: 10px;
+    float: left;
+}
+
+.rcol{
+    width: 400px;
+    height: 420px;
+    background-color:antiquewhite;
+    padding-left: 20px;
+     float: right;
 }
 
 .boxclient {
     width: 245px;
-    height: 137px;
+    height: 160px;
     border-bottom: 2px solid;
     padding-top:  20px;
 }
-
 
 
 .simg {
@@ -40,6 +49,7 @@ body {
     padding-bottom: 10px;
     height: auto;
     float: left;
+
 }
 
 
@@ -47,6 +57,8 @@ body {
     width: 116px;
     padding-right: 10px;
     float: left;
+
+
 }
 
 .clientname {
@@ -59,13 +71,4 @@ body {
     height: 52px;
     font-size: 14px;
     font-weight: 800;
-}
-
-
-#rightcol{
-    width: 500px;
-    height: 320px;
-    background-color:antiquewhite;
-    float: left;
-    padding-left: 20px;
 }
